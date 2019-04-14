@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoffeeApp.Master"
+             Title="Master"
+             BackgroundColor="#9B6549"
+             Icon="menu.png"
+             >
+    <StackLayout Padding="30">
+        <Image
+            Source="OTCHeaderV2.png"
+            WidthRequest="300"
+            HeightRequest="100"
+            VerticalOptions="Start"
+            HorizontalOptions="Center"      
+            >
+        </Image>
+           
+        <Button x:Name="buttonA" 
+                Text="Admin"
+                TextColor="#F2E5B4"
+                FontSize="20"
+                FontAttributes="Bold"
+                BackgroundColor="#683716"
+                />
+
+        <Button x:Name="buttonB" 
+                Text="Info"
+                FontSize="20"
+                TextColor="#F2E5B4"
+                FontAttributes="Bold"
+                BackgroundColor="#683716"
+                />
+
+    </StackLayout>        
+</ContentPage>

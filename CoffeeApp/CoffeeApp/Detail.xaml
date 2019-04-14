@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoffeeApp.Detail"
+             Title="Home"
+             BackgroundColor="#9B6549">
+
+    <Grid x:Name="MainGrid" Padding="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*" />
+            <RowDefinition Height="100*" />
+            <RowDefinition Height="100*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100*" />
+            <ColumnDefinition Width="400*" />
+            <ColumnDefinition Width="100*" />
+        </Grid.ColumnDefinitions>
+
+        <!--<Label Text="0" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"/>
+        <Label Text="1" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center"/>
+        <Label Text="2" Grid.Row="0" Grid.Column="2" HorizontalOptions="Center"/>
+        <Label Text="3" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"/>
+        <Label Text="4" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center"/>
+        <Label Text="5" Grid.Row="1" Grid.Column="2" HorizontalOptions="Center"/>
+        <Label Text="6" Grid.Row="2" Grid.Column="0" HorizontalOptions="Center"/>
+        <Label Text="7" Grid.Row="2" Grid.Column="1" HorizontalOptions="Center"/>
+        <Label Text="8" Grid.Row="2" Grid.Column="2" HorizontalOptions="Center"/>-->
+
+        <!--<BoxView 
+            x:Name="bxViewMainHeader"
+            BackgroundColor="DodgerBlue"
+            Grid.Row="0"
+            Grid.ColumnSpan="3"
+            HeightRequest="35"
+            WidthRequest="30"
+            VerticalOptions="Start"
+            HorizontalOptions="Fill"
+            />-->
+
+        <Label 
+            x:Name="lblMainHeader"             
+            Text="Tap Coffee"
+            TextColor="#F2E5B4"
+            FontSize="25"
+            FontAttributes="Bold"
+            Grid.Row="0"
+            Grid.ColumnSpan="3"
+            HorizontalOptions="CenterAndExpand"
+            VerticalTextAlignment="Start"
+            >
+        </Label>
+
+        <!--<BoxView 
+            x:Name="bxViewCounter"
+            BackgroundColor="Black"
+            Grid.Row="0"
+            Grid.Column="1"
+            HeightRequest="45"
+            WidthRequest="45"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            />-->
+
+        <Label Text="0" 
+               TextColor="#F4E5BA"
+               FontAttributes="Bold"
+               FontSize="50"
+               Grid.Row="0" 
+               Grid.Column="1"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               x:Name="lblCounter"
+               />
+        
+        <!--OLD BTN-->
+        <!--<Button 
+            x:Name="btnMainCoffee"
+            Grid.Row="1" 
+            Grid.Column="1"
+            Clicked="Coffee_Button_Clicked"
+            FontSize="25" 
+            FontAttributes="Bold"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="CenterAndExpand"          
+            BorderColor="Brown"
+            BorderRadius = "500"
+            BorderWidth = "10"
+            WidthRequest="350"
+            HeightRequest="350"
+            BackgroundColor="Brown">
+
+        </Button>-->
+
+        <ImageButton
+                x:Name="btnMainCoffee"
+                Source="CoffeeB3.png"
+                Grid.RowSpan="3" 
+                Grid.ColumnSpan="3"
+                Clicked="Coffee_Button_Clicked"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"          
+                WidthRequest="250"
+                HeightRequest="250"
+                >
+        </ImageButton>
+
+        <ProgressBar
+            x:Name="coffeebar"
+            Grid.Row="2"
+            Grid.ColumnSpan="3"           
+            WidthRequest="250"
+            HeightRequest="50"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            BackgroundColor="#4e3530" 
+            ProgressColor="#4e3530"
+            >
+        </ProgressBar>
+
+        <Button
+            x:Name="btn_Empty"
+            Text="Empty"
+            Clicked="BtnEmpty"
+            FontSize="10"
+            Grid.Row="2"
+            Grid.Column="2"
+            WidthRequest="70"
+            HeightRequest="50"
+            VerticalOptions="EndAndExpand"
+            HorizontalOptions="EndAndExpand"
+            TextColor="#F2E5B4"
+            BackgroundColor="#683716"
+            >
+        </Button>
+
+        <Button
+            x:Name="btn_Reset"
+            Text="Reset"
+            Clicked="BtnReset"
+            IsEnabled="False"
+            FontSize="10"
+            Grid.Row="2"
+            Grid.Column="0"
+            WidthRequest="70"
+            HeightRequest="50"
+            VerticalOptions="EndAndExpand"
+            HorizontalOptions="EndAndExpand"
+            IsVisible="False"
+            TextColor="#F2E5B4"
+            BackgroundColor="#683716"
+            >
+        </Button>
+    </Grid>
+</ContentPage>
