@@ -14,6 +14,7 @@ namespace CoffeeApp
 	{
 
         #region Notes
+        //Git https://devlinduldulao.pro/how-to-use-git-and-github-in-xamarin-development/
         //OTC Syle Guid https://news.otc.edu/media/uploads/2015/03/styleguide_new.pdf
         #endregion
 
