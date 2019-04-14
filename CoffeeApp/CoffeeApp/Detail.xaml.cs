@@ -15,7 +15,6 @@ namespace CoffeeApp
 
         #region Notes
         //OTC Syle Guid https://news.otc.edu/media/uploads/2015/03/styleguide_new.pdf
-      
         #endregion
 
         public static int totalPeopleToday = 0; // TOTAL PEOPLE
