@@ -30,6 +30,7 @@ namespace CoffeeApp
 
             lblTotalPeople.Text = Detail.totalPeopleToday.ToString();
             lblTotalPots.Text = Detail.totalPotsToday.ToString();
+
         }
 
         private void BtnEditPeople_Clicked(object sender, EventArgs e)

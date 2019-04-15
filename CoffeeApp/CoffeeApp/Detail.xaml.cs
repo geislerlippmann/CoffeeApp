@@ -73,6 +73,10 @@ namespace CoffeeApp
             topCounter = topCounter - 1;
             lblCounter.Text = topCounter.ToString();
 
+            //Data myPeopleTotalSend = new Data();
+            //myPeopleTotalSend.CoffeeTotalPeople = totalPeopleToday;
+            //lblDisplay.Text = myPeopleTotalSend.CoffeeTotalPeople.ToString();
+
             if (clickCounter <= totalCupsAvalable)
             {
                 coffeebar.Progress = coffeebar.Progress - decrementBy;  //LOWERS COFFEE BAR
@@ -86,6 +90,7 @@ namespace CoffeeApp
                 btn_Empty.IsVisible = false;
                 btn_Reset.IsEnabled = true;
                 btn_Reset.IsVisible = true;
+                btn_Reset.IsEnabled = true;
                 
             }
             else if (clickCounter == turnYellow)  // HIT YELLOW

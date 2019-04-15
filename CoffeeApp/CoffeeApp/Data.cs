@@ -6,7 +6,7 @@ using static System.Console;
 
 namespace CoffeeApp
 {
-    class Data
+    public class Data
     {
         private int timeID;
         private int dateID;
@@ -22,8 +22,10 @@ namespace CoffeeApp
         {
 
         }
-
-
+        public Data(int coffeeTotalPeople)
+        {
+            this.coffeeTotalPeople = coffeeTotalPeople;
+        }
         public Data(int coffeeTotalPots, int coffeeTotalPeople)
         {
             this.coffeeTotalPots = coffeeTotalPots;

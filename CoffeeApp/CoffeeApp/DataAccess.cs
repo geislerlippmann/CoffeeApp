@@ -6,7 +6,7 @@ using static System.Console;
 
 namespace CoffeeApp
 {
-    class DataAccess
+    public class DataAccess
     {
 
         private static SqlConnection dbConn;

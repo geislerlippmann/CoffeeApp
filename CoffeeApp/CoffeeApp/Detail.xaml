@@ -135,6 +135,14 @@
             >
         </Button>
 
+        <Label x:Name="lblDisplay"
+                Grid.Row="1"
+                Grid.Column="0"
+               Text="_"
+            >
+
+        </Label>
+
         <Button
             x:Name="btn_Reset"
             Text="Reset"
@@ -152,5 +160,6 @@
             BackgroundColor="#683716"
             >
         </Button>
+
     </Grid>
 </ContentPage>
