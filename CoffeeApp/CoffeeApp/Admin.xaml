@@ -22,16 +22,6 @@
                 <ColumnDefinition Width="100*" />
             </Grid.ColumnDefinitions>
 
-            
-            <!--<Label Text="0" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"/>-->
-            <!--<Label Text="1" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center"/>-->
-            <!--<Label Text="2" Grid.Row="0" Grid.Column="2" HorizontalOptions="Center"/>-->
-            <!--<Label Text="3" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"/>-->
-            <!--<Label Text="4" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center"/>-->
-            <!--<Label Text="5" Grid.Row="1" Grid.Column="2" HorizontalOptions="Center"/>-->
-            <!--<Label Text="6" Grid.Row="2" Grid.Column="0" HorizontalOptions="Center"/>-->
-            <!--<Label Text="7" Grid.Row="2" Grid.Column="1" HorizontalOptions="Center"/>-->
-            <!--<Label Text="8" Grid.Row="2" Grid.Column="2" HorizontalOptions="Center"/>-->
 
             <Label Text="Totals For Today"
                    HorizontalOptions="StartAndExpand"
@@ -64,6 +54,8 @@
                    FontAttributes="Bold"
                    />
 
+            <!--xmlns:system="clr-namespace:System;assembly=mscorlib"-->
+            
             <Label Text="Total Pots: "
                    VerticalOptions="Start"
                    HorizontalOptions="Start"
@@ -90,11 +82,10 @@
                     Grid.Row="2"
                     Grid.Column="2"
                     WidthRequest="70"
-                    HeightRequest="30"
+                    HeightRequest="35"
                     VerticalOptions="Center"
                     HorizontalOptions="EndAndExpand"
                     TextColor="#F2E5B4"
-                    FontAttributes="Bold"
                     BackgroundColor="#683716"
                     >
             </Button>
@@ -106,11 +97,10 @@
                     Grid.Row="1"
                     Grid.Column="2"
                     WidthRequest="70"
-                    HeightRequest="30"
+                    HeightRequest="35"
                     VerticalOptions="Center"
                     HorizontalOptions="EndAndExpand"
                     TextColor="#F2E5B4"
-                    FontAttributes="Bold"
                     BackgroundColor="#683716"
                     >
             </Button>
@@ -118,7 +108,7 @@
             <Button x:Name="btnSubmitPeople"
                     Text="Submit"
                     Clicked="BtnSubmitPeople_Clicked"
-                    FontSize="15"
+                    FontSize="10"
                     Grid.Row="5"
                     Grid.Column="1"
                     WidthRequest="80"
@@ -130,13 +120,14 @@
                     TextColor="#F2E5B4"
                     FontAttributes="Bold"
                     BackgroundColor="#683716"
+                    
                     >
             </Button>
             
             <Button x:Name="btnSubmitPots"
                     Text="Submit"
                     Clicked="BtnSubmitPots_Clicked"
-                    FontSize="15"
+                    FontSize="10"
                     Grid.Row="5"
                     Grid.Column="1"
                     WidthRequest="80"
@@ -151,9 +142,13 @@
                     >
             </Button>
 
-            <Button x:Name="btnAddMore"
+            
+
+            <!--PEOPLE INCREMENT DECREMENT-->
+            
+            <Button x:Name="btnAddMorePeople"
                     Text="+"
-                    Clicked="BtnAddMore_Clicked"
+                    Clicked="BtnAddMorePeople_Clicked"
                     FontSize="20"
                     Grid.Row="4"
                     Grid.Column="2"
@@ -169,9 +164,45 @@
                     >
             </Button>
 
-            <Button x:Name="btnSubMore"
+            <Button x:Name="btnSubMorePeople"
                     Text="-"
-                    Clicked="BtnSubMore_Clicked"
+                    Clicked="BtnSubMorePeople_Clicked"
+                    FontSize="30"
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    WidthRequest="60"
+                    HeightRequest="60"
+                    VerticalOptions="End"
+                    HorizontalOptions="Center"
+                    IsVisible="False"
+                    IsEnabled="False" 
+                    TextColor="#F2E5B4"
+                    FontAttributes="Bold"
+                    BackgroundColor="#683716"
+                    >
+            </Button>
+            <!--POTS INCREMENT DECREMENT-->
+            <Button x:Name="btnAddMorePot"
+                    Text="+"
+                    Clicked="BtnAddMorePot_Clicked"
+                    FontSize="20"
+                    Grid.Row="4"
+                    Grid.Column="2"
+                    WidthRequest="60"
+                    HeightRequest="60"
+                    VerticalOptions="End"
+                    HorizontalOptions="Center"
+                    IsVisible="False"
+                    IsEnabled="False"   
+                    TextColor="#F2E5B4"
+                    FontAttributes="Bold"
+                    BackgroundColor="#683716"
+                    >
+            </Button>
+
+            <Button x:Name="btnSubMorePot"
+                    Text="-"
+                    Clicked="BtnSubMorePot_Clicked"
                     FontSize="30"
                     Grid.Row="4"
                     Grid.Column="0"
@@ -187,6 +218,8 @@
                     >
             </Button>
 
+
+
             <Label x:Name="lblEditAmount"
                    Text="0"
                    VerticalOptions="Start"
@@ -199,24 +232,6 @@
                    FontAttributes="Bold"                  
                    />
 
-
-
-            <!--<Button x:Name="btnSQL"
-                    Clicked="BtnSQL_Clicked"
-                    Text="SQL"
-                    Grid.Row="5"
-                    Grid.Column="0"
-                    WidthRequest="70"
-                    HeightRequest="30"
-                    VerticalOptions="Center"
-                    HorizontalOptions="EndAndExpand"
-                    TextColor="#F2E5B4"
-                    FontAttributes="Bold"
-                    BackgroundColor="#683716"                 
-                    >
-            </Button>-->
-
-
             <DatePicker x:Name="dateRangePot"
                     DateSelected="DateRangePot_DateSelected"
                     Grid.Row="3"
@@ -224,7 +239,7 @@
                     HorizontalOptions="CenterAndExpand"
                     VerticalOptions="CenterAndExpand"      
                     Format="yyyy-MM-dd"
-                        
+                    TextColor="#F2E5B4" 
                     IsEnabled="False"
                     IsVisible="False" 
                 >
@@ -237,37 +252,24 @@
                     HorizontalOptions="CenterAndExpand"
                     VerticalOptions="CenterAndExpand"      
                     Format="yyyy-MM-dd"
-                        
+                    TextColor="#F2E5B4" 
                     IsEnabled="False"
                     IsVisible="False" 
                 >
             </DatePicker>
-
-            <!--<Label x:Name="lblMessage"
-                   Grid.Row="4"
-                   Grid.Column="1"
-                   Text="|"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Start"
-                   
-                   IsEnabled="False"
-                   IsVisible="False" 
-                >
-            </Label>-->
             
             <Button x:Name="btnPeopleDate"
                     Clicked="BtnPeopleDate_Clicked"
-                    Text="People"
+                    Text="SEND"
                     Grid.Row="4"
                     Grid.Column="1"
                     WidthRequest="70"
-                    HeightRequest="30"
+                    HeightRequest="35"
                     VerticalOptions="Center"
                     HorizontalOptions="Center"
                     TextColor="#F2E5B4"
-                    FontAttributes="Bold"
                     BackgroundColor="#683716" 
-                    
+                    FontSize="10"
                     IsEnabled="False"
                     IsVisible="False" 
                 >
@@ -276,28 +278,37 @@
 
             <Button x:Name="btnPotDate"
                     Clicked="BtnPotDate_Clicked"
-                    Text="Pots"
+                    Text="SEND"
                     Grid.Row="4"
                     Grid.Column="1"
                     WidthRequest="70"
-                    HeightRequest="30"
+                    HeightRequest="35"
                     VerticalOptions="Center"
                     HorizontalOptions="Center"
                     TextColor="#F2E5B4"
-                    FontAttributes="Bold"
                     BackgroundColor="#683716"
-                    
+                    FontSize="10"
                     IsEnabled="False"
                     IsVisible="False"                   
                 >             
             </Button>
 
+            <Button x:Name="btnSQLTotalsToday"
+                    Clicked="BtnSQLTotalsToday_Clicked"
+                    Text="Today"
+                    Grid.Row="5"
+                    Grid.Column="2"
+                    WidthRequest="70"
+                    HeightRequest="35"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    TextColor="#F2E5B4"
+                    BackgroundColor="#683716"
+                    FontSize="10"
+                >             
+            </Button>
 
 
-
-
-            
-            
         </Grid>
     </ContentPage.Content>
 </ContentPage>

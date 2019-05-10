@@ -6,25 +6,69 @@
              Title="Info">
     
     <ContentPage.Content>
-        <StackLayout Padding="30">
-            <!--<Label Text="Welcome to the Info Page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" 
-                TextColor="#F2E5B4"
-                   />-->
-            <Label
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" 
-                TextColor="#F2E5B4"
+        <StackLayout Padding="40">
+            <Label x:Name="lblMain"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"
+                WidthRequest="300"
+                TextColor="White"
+                FontSize="15"
+                FontAttributes="Bold"
                 >
                 <Label.Text>
-                    Dev Team:
-                    - Geisler Lippmann 
-                    - Matthew Gleen
-                    - Kimberly Leubner
+
+                    Home
+        Coffee Button -
+                One tap is equal to one person. 
+        Empty Button - 
+                Empties the remaining coffee.  
+        Reset Button -
+                Resets the progress bar.
+                Resets the top cup counter. 
+                Adds one pot of coffee.
+
                 </Label.Text>
+
             </Label>
-            
+            <Label
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"
+                WidthRequest="300"
+                TextColor="White"
+                FontSize="15"
+                FontAttributes="Bold"
+                >
+                <Label.Text>
+
+                    Admin 
+                    
+        Edit People Button - 
+                Used to edit the People total. 
+                -Edit. 
+                -Select a date.
+                -Click Send.
+                -Add or subtract from People total.
+                -Click submit or back arrow.
+
+        Edit Coffee Pots Button - 
+                Used to edit the Coffee Pots total. 
+                -Edit. 
+                -Select a date.
+                -Click Send.
+                -Add or subtract from Pots total.
+                -Click submit or back arrow.
+
+        Today Button - 
+                Used to display todays totals.
+
+
+                </Label.Text>
+
+            </Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

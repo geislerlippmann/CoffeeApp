@@ -8,42 +8,17 @@ namespace CoffeeApp
 {
     public class Data
     {
-        private int timeID;
         private int dateID;
-        private int coffeeTotalPots;
-        private int coffeeTotalPeople;
 
-        public int TimeID { get => timeID; set => timeID = value; }
         public int DateID { get => dateID; set => dateID = value; }
-        public int CoffeeTotalPots { get => coffeeTotalPots; set => coffeeTotalPots = value; }
-        public int CoffeeTotalPeople { get => coffeeTotalPeople; set => coffeeTotalPeople = value; }
 
         public Data()
         {
-
         }
-        public Data(int coffeeTotalPeople)
+        public Data(int dateId)
         {
-            this.coffeeTotalPeople = coffeeTotalPeople;
+            DateID = dateId;
         }
-        public Data(int coffeeTotalPots, int coffeeTotalPeople)
-        {
-            this.coffeeTotalPots = coffeeTotalPots;
-            this.coffeeTotalPeople = coffeeTotalPeople;
-        }
-
-        public Data(int timeID, int dateID, int coffeeTotalPots, int coffeeTotalPeople)
-        {
-            this.timeID = timeID;
-            this.dateID = dateID;
-            this.coffeeTotalPots = coffeeTotalPots;
-            this.coffeeTotalPeople = coffeeTotalPeople;
-        }
-
-
-
-
-
 
     }
 }
